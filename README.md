@@ -36,8 +36,6 @@ Both models operate on:
 Input shape : 1 × 400 × 400
 Output embedding : 128-dimensional L2-normalized vector
 
-yaml
-Kodu kopyala
 
 ---
 
@@ -75,8 +73,6 @@ Example training output loss:
 Initial loss: ~1.00
 Final best loss: ~0.13
 
-yaml
-Kodu kopyala
 
 ---
 
@@ -92,8 +88,6 @@ Validation accuracy: ~90.5%
 Test accuracy: ~92.3%
 Threshold: ~1.21
 
-yaml
-Kodu kopyala
 
 ---
 
