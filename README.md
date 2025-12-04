@@ -88,15 +88,12 @@ Validation accuracy: ~90.5%
 Test accuracy: ~92.3%
 Threshold: ~1.21
 
-![Training Loss](./SiameseModel/logs/siamese_train_loss.png)
-
-![Avg pos/Neg distances per epoch](./SiameseModel/logs/siamese_train_pos_neg_dist.png)
-
-![Test Distances](./SiameseModel/logs/siamese_dist_test.png)
-
-![ROC](./SiameseModel/logs/siamese_roc_curve.png)
-
-![PR AUG](./SiameseModel/logs/siamese_pr_curve.png)
+📉 Training Metrics
+<p align="center"> <img src="./SiameseModel/logs/siamese_train_loss.png" width="420" /> <img src="./SiameseModel/logs/siamese_train_pos_neg_dist.png" width="420" /> </p>
+📊 Evaluation Metrics
+<p align="center"> <img src="./SiameseModel/logs/siamese_dist_test.png" width="420" /> <img src="./SiameseModel/logs/siamese_roc_curve.png" width="420" /> </p>
+📈 Precision–Recall Curve
+<p align="center"> <img src="./SiameseModel/logs/siamese_pr_curve.png" width="500" /> </p>
 
 ---
 
@@ -160,6 +157,7 @@ GUI internally:
 ---
 ## 🤝 Contributors
 **Efe Görkem Akkanat** — Siamese Modal, GUI, Database Management.
+
 **Şeyda Yağmur Asal** — Triplet Network, GUI, Database Management.
 
 
