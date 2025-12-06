@@ -27,7 +27,7 @@ This project allows:
 ### ✔️ Siamese Network
 - Contrastive Loss  
 - Learns pairwise similarity  
-- Best threshold found during evaluation (example): `~1.21`
+- Best threshold found during evaluation: `~1.21` (for 0.92 accuracy siamese modal)
 
 ### ✔️ Triplet Network
 - Triplet Loss (Anchor-Positive-Negative)
@@ -69,7 +69,7 @@ Training supports:
 - Best-model saving  
 - Last-checkpoint saving  
 - Full loss logging  
-- CUDA acceleration  
+- CUDA acceleration with RTX 3070 (64 batch size support)
 
 Example training output loss:  
 Initial loss: ~1.00
@@ -106,11 +106,14 @@ Each registered user has:
 | **Signatures** | Multiple PNG signature samples (stored in a separate table) |
 | **Embedding** | Mean embedding vector of all user signatures |
 
-### Why average the embeddings?
+### Why average the embeddings for each user?
 - Allows more stable identity representation  
 - Reduces variance between signature samples  
 - Works with **1 or many signatures**  
-
+### Alternative: closest signature embedding:(Discarded)
+- Assures more widely acceptance.
+- FN Rate decreases.
+- Discarded due to dramatic increase in FP rate.
 ---
 
 ## 🔍 Supported Database Queries
@@ -154,3 +157,5 @@ GUI internally:
 ---
 ## 🤝 Contributors
 **Efe Görkem Akkanat** — Siamese Modal, GUI, Database Management.
+
+**Şeyda Yağmur Asal** — Triplet Modal, GUI, Database Management.
